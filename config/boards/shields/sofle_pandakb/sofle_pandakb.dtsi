@@ -1,0 +1,11 @@
+/dts-v1/;
+/ {
+    chosen {
+        zmk,keyboard = &sofle_pandakb;
+    };
+};
+
+&sofle_pandakb {
+    compatible = "zmk,shield";
+    label = "sofle_pandakb";
+};
