@@ -1,0 +1,4 @@
+# Minimal ZMK shield descriptor
+compatible: "zmk,shield"
+label: "sofle_pandakb"
+description: "PandaKB Sofle shield minimal"
