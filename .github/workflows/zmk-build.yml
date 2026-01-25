@@ -1,26 +1,6 @@
-name: ZMK Build
-
-on:
-  push:
-    branches: [ main ]
-  workflow_dispatch:
+name: Build ZMK firmware
+on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Show build.yaml
-        run: |
-          echo "build.yaml content:"
-          cat build.yaml || true
-
-      # Placeholder step: call the build script from the template
-      # Replace the following with the actual build steps from the zmk-config-template workflow
-      - name: Run ZMK build (placeholder)
-        run: |
-          echo "This workflow must be replaced by the ZMK build workflow from the template."
-          echo "If you have the original .github/workflows from zmk-config-template, copy them here."
- 
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.3
