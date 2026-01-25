@@ -1,0 +1,15 @@
+/ {
+    aliases {
+        left: endpoint@0 { };
+    };
+
+    chosen {
+        zmk,behavior = &left;
+    };
+
+    /* Exemple minimal: remplace les pins par les tiens */
+    gpios {
+        row0 = <&gpio0 11 GPIO_ACTIVE_LOW>;
+        col0 = <&gpio0 12 GPIO_ACTIVE_LOW>;
+    };
+};
