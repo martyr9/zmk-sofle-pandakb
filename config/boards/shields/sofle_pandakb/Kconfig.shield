@@ -1,0 +1,5 @@
+config SHIELD_SOFLE_PANDAKB_LEFT
+    def_bool $(shields_list_contains,sofle_pandakb_left)
+
+config SHIELD_SOFLE_PANDAKB_RIGHT
+    def_bool $(shields_list_contains,sofle_pandakb_right)
