@@ -7,7 +7,7 @@
         
         default_layer {
             bindings = 
-                &kp Q &kp W &kp E &kp R &kp T &kp Y
+              < &kp Q &kp W &kp E &kp R &kp T &kp Y
                 &kp A &kp S &kp D &kp F &kp G &kp H
                 &kp Z &kp X &kp C &kp V &kp B &kp N
                 &kp LCTRL &kp LALT &kp LGUI &kp SPACE &kp RET &kp BSPC
@@ -16,18 +16,3 @@
         };
     };
 };
-```
-
-## Structure finale
-```
-config/
-├── boards/
-│   └── shields/
-│       └── sofle_pandakb/
-│           ├── Kconfig.shield
-│           ├── Kconfig.defconfig
-│           ├── sofle_pandakb_left.overlay
-│           ├── sofle_pandakb_left.zmk.yml
-│           ├── sofle_pandakb_right.overlay
-│           └── sofle_pandakb_right.zmk.yml
-└── sofle_pandakb.keymap
