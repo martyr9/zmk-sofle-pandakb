@@ -1,0 +1,23 @@
+if SHIELD_SOFLE_PANDAKB_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Sofle PandaKB"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_SOFLE_PANDAKB_RIGHT
+
+config ZMK_KEYBOARD_NAME
+    default "Sofle PandaKB Right"
+
+endif
+
+if SHIELD_SOFLE_PANDAKB_LEFT || SHIELD_SOFLE_PANDAKB_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
