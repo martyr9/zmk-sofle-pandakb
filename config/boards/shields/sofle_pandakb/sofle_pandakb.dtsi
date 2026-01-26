@@ -1,11 +1,24 @@
-/dts-v1/;
 / {
-    chosen {
-        zmk,keyboard = &sofle_pandakb;
-    };
-};
+    keymap {
+        compatible = "zmk,keymap";
 
-&sofle_pandakb {
-    compatible = "zmk,shield";
-    label = "sofle_pandakb";
+        default_layer {
+            bindings = <
+                // Row 0 — 13 touches
+                &kp ESC &kp 1  &kp 2  &kp 3  &kp 4  &kp 5      &kp 6  &kp 7  &kp 8  &kp 9  &kp 0  &kp NO 
+
+                // Row 1 — 13 touches
+                &kp NO  &kp Q  &kp W  &kp E  &kp R  &kp T      &kp NO  &kp NO  &kp NO  &kp NO  &kp NO  &kp NO  
+
+                // Row 2 — 13 touches
+                &kp NO  &kp A  &kp S  &kp D  &kp F  &kp G      &kp NO  &kp NO  &kp NO  &kp NO  &kp NO  &kp NO  
+
+                // Row 3 — 13 touches
+                &kp LSFT  &kp Z  &kp X  &kp C  &kp V  &kp B      &kp NO  &kp NO  &kp NO  &kp NO  &kp NO  &kp NO  
+
+                // Row 4 — 12 touches
+                &kp NO  &kp NO  &kp NO  &kp Space &kp Enter      &kp Enter  &kp Space  &kp NO  &kp NO  &kp NO 
+            >;
+        };
+    };
 };
