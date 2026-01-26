@@ -1,4 +1,4 @@
 
 compatible: "zmk,shield"
-label: "sofle_pandakb_left"
-description: "PandaKB Sofle left half"
+label: "sofle_pandakb_right"
+description: "PandaKB Sofle right half"
