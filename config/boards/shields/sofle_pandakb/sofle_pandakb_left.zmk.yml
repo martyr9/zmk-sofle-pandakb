@@ -1,4 +1,10 @@
-
-compatible: "zmk,shield"
-label: "sofle_pandakb_left"
-description: "PandaKB Sofle left half"
+file_format: "1"
+id: sofle_pandakb_left
+name: Sofle PandaKB Left
+type: shield
+url: https://github.com/martyr9/zmk-sofle-pandakb
+requires: [pro_micro]
+features:
+  - keys
+siblings:
+  - sofle_pandakb_right
