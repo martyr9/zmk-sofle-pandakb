@@ -2,7 +2,7 @@
 
 / {
     compatible = "zmk,shield";
-    label = "sofle_left_only";
+    label = "sofle_left";
 };
 
 &kscan0 {
@@ -25,7 +25,7 @@
         <&gpio1 0 GPIO_ACTIVE_HIGH>;
 };
 
-keymap_transform_left_only: keymap_transform_0 {
+keymap_transform_left: keymap_transform_0 {
     compatible = "zmk,matrix-transform";
     rows = <5>;
     columns = <6>;
