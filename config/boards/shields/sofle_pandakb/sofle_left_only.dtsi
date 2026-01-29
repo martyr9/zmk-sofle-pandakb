@@ -1,0 +1,24 @@
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            bindings = <
+                // Row 0 — 13 touches
+                &kp ESC &kp 1  &kp 2  &kp 3  &kp 4  &kp 5      
+
+                // Row 1 — 13 touches
+                &kp NO  &kp Q  &kp W  &kp E  &kp R  &kp T      
+
+                // Row 2 — 13 touches
+                &kp NO  &kp A  &kp S  &kp D  &kp F  &kp G      
+
+                // Row 3 — 13 touches
+                &kp LSFT  &kp Z  &kp X  &kp C  &kp V  &kp B    
+
+                // Row 4 — 12 touches
+                &kp NO  &kp NO  &kp NO  &kp Space &kp Enter    
+            >;
+        };
+    };
+};
