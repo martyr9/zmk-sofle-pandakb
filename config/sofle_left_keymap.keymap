@@ -1,0 +1,29 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            label = "LEFT_ONLY";
+
+            bindings = <
+                // Row 0 (6 touches)
+                &kp ESC   &kp 1     &kp 2     &kp 3     &kp 4     &kp 5
+
+                // Row 1 (6 touches)
+                &kp TAB   &kp Q     &kp W     &kp E     &kp R     &kp T
+
+                // Row 2 (6 touches)
+                &kp LSFT  &kp A     &kp S     &kp D     &kp F     &kp G
+
+                // Row 3 (6 touches)
+                &kp LCTRL &kp Z     &kp X     &kp C     &kp V     &kp B
+
+                // Row 4 (6 touches — thumbs)
+                &none     &none     &kp SPACE &kp RET   &kp BSPC  &none
+            >;
+        };
+    };
+};
