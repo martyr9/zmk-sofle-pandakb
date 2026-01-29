@@ -1,5 +1,7 @@
 include:
-  - board: nice_nano_v2
-    shield: sofle_pandakb_left
-  - board: nice_nano_v2
-    shield: sofle_pandakb_right
+#  - board: nice_nano_v2
+#    shield: sofle_pandakb_left
+#  - board: nice_nano_v2
+#    shield: sofle_pandakb_right
+  - board: nice_nano_v2 
+  shield: sofle_left_only
