@@ -1,19 +1,19 @@
-#include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
-
-/ {
-    keymap {
-        compatible = "zmk,keymap";
+##include <behaviors.dtsi>
+##include <dt-bindings/zmk/keys.h>
+#
+#/ {
+#    keymap {
+#        #compatible = "zmk,keymap";
         
-        default_layer {
-            label = "DEFAULT";
-            bindings = <
-                &kp ESC &kp 1 &kp 2 &kp 3 &kp 4 &kp 5 &kp 6 &kp 7 &kp 8 &kp 9 &kp 0 &none &none
-                &none &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P &none &none
-                &kp LSFT &kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &none &kp RSFT &none
-                &kp LCTL &kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp DOT &none &kp RCTL &none
-                &none &none &none &kp SPACE &kp RET &kp RET &kp SPACE &none &none &none &none &none
-            >;
-        };
-    };
-};
+#        default_layer {
+#            label = "DEFAULT";
+#            bindings = <
+#                &kp ESC &kp 1 &kp 2 &kp 3 &kp 4 &kp 5 &kp 6 &kp 7 &kp 8 &kp 9 &kp 0 &none &none
+#                &none &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P &none &none
+#                &kp LSFT &kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &none &kp RSFT &none
+#                &kp LCTL &kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp DOT &none &kp RCTL &none
+#                &none &none &none &kp SPACE &kp RET &kp RET &kp SPACE &none &none &none &none &none
+#            >;
+#        };
+#    };
+#};
