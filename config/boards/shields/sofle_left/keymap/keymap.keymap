@@ -6,7 +6,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            label = "LEFT_ONLY";
+            label = "LEFT";
 
             bindings = <
                 // Row 0 (6 touches)
