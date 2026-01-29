@@ -22,7 +22,7 @@
                 &kp LCTRL &kp Z     &kp X     &kp C     &kp V     &kp B
 
                 // Row 4 (6 touches — thumbs)
-                &none     &none     &kp SPACE &kp RET   &kp BSPC  &none
+                &none     &none     &kp SPACE &kp RET   &kp BSPC  
             >;
         };
     };
